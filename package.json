@@ -1,0 +1,21 @@
+{
+  "name": "building-a-graphql-api-with-apollo-server",
+  "version": "1.0.0",
+  "description": "Course: https://app.pluralsight.com/library/courses/graphql-api-apollo-server/table-of-contents",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-datasource": "^0.7.2",
+    "apollo-server": "^2.19.1"
+  },
+  "devDependencies": {
+    "apollo-datasource-rest": "^0.9.6",
+    "nodemon": "^2.0.6"
+  }
+}
