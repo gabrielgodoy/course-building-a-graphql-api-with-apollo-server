@@ -10,3 +10,7 @@ Server will start on `3000` port
 
 ### GraphQL server
 run `npm start` on root
+
+
+### TODO
+Refactor schema file
