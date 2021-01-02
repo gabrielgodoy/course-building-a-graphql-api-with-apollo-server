@@ -17,5 +17,11 @@
   "devDependencies": {
     "apollo-datasource-rest": "^0.9.6",
     "nodemon": "^2.0.6"
+  },
+  "nodemonConfig": {
+    "env": {
+      "APOLLO_KEY": "service:SessionAPI-l3dt4f:h064vL5rZB4YGe60je5BCA",
+      "APOLLO_GRAPH_VARIANT": "current"
+    }
   }
 }

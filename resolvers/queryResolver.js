@@ -9,7 +9,15 @@ module.exports = {
     - config: contains information about the execution state of the operation
   */
   sessionById: (parent, args, context, info) => {
-    return context.dataSources.sessionApi.getSessionById(args.id);
+    // Handling errors
+    try {
+      // Return Session object
+      return context.dataSources.sessionApi.getSessionById(args.id);
+    } catch (error) {
+      // Return Error object
+      // Problem with this approach is that errors are being swallowed
+      return { code: 'ERROR', message: 'An error occurred', token: '123456' };
+    }
   },
   speakers: (parent, args, context, info) => {
     return context.dataSources.speakerApi.getSpeakers();
